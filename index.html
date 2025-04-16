@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Krenero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .banner {
+            background: linear-gradient(to right, #FBBF24, #F59E0B);
+            text-align: center;
+            padding: 16px;
+        }
+
+        .banner h1 {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .main-section {
+            background-color: #086411;
+            text-align: center;
+            padding: 32px 16px;
+        }
+
+        .main-section h2 {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 32px;
+        }
+
+        .main-section .services {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .main-section .service {
+            text-align: center;
+        }
+
+        .main-section .service .icon {
+            background-color: white;
+            border-radius: 50%;
+            padding: 16px;
+            margin-bottom: 8px;
+        }
+
+        .main-section .service .icon i {
+            font-size: 36px;
+            color: #4B5563;
+        }
+
+        .main-section .service p {
+            color: white;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .rounded-image-border {
+            border: 4px solid #7E8492;
+            border-radius: 50%;
+        }
+        .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 20px;
+    }
+    .service-item {
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+      margin: 8px 0;
+      background: #f0f0f0;
+      border-radius: 50px;
+      padding: 8px 20px;
+    }
+
+    .service-item1 {
+      display: flex;
+      justify-content:flex-start;
+      align-items: center;
+      margin: 8px 0;
+      background: #f0f0f0;
+      border-radius: 50px;
+      padding: 8px 20px;
+    }
+
+    .icon {
+      background-color: #2b4fc3;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+    }
+    .investment-title {
+      color: #228b22;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .investment-services li {
+      margin-bottom: 10px;
+    }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary">
+                        <h2 class="m-0 text-dark"><img src="img/logo.png" width="280px" height="100px"></h2>
+                    </h1>
+                </a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="banking.html" class="nav-item nav-link">Banking Partner</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        <a href="tel:+919711396999" class="nav-item nav-link">
+                            <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 9711396999</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> -->
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/header.png" alt="" class="d-block" style="width:100%">
+            </div>
+        </div>
+    </div><br>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+  
+    <section class="banner">
+        <marquee behavior="scroll" direction="left">
+            <h1>Krenero successfully processes</h1>
+        </marquee>
+    </section>
+    <!-- Main Section -->
+    <section class="main-section">
+        <h2>Krenero is Biggest Loan Syndicator in India.</h2>
+        <div class="services">
+            <div class="service">
+                <img class="rounded-circle shadow p-1 mx-auto mb-3 rounded-image-border" alt="" src="img/developer.png"
+                    style="width: 120px; height: 120px; background: white;">
+                <p style="font: size 36px;;">Mortgage Loans
+                <p>
+            </div>
+            <div class="service">
+                <img class="rounded-circle shadow p-1 mx-auto mb-3 rounded-image-border" alt="" src="img/house-key.png"
+                    style="width: 120px; height: 120px; background: white;">
+                <p>LAP (Loan Against Property)</p>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Collab start -->
+    <div class="container-xxl py-5" style="background-image: url(img/background.png);">
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex justify-content-center">
+                <img src="img/banking partner 1.png" alt="" class="d-block  card-custom" style="width:50%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Collab end -->
+
+    <!-- Banking Start -->
+    <div class="container-xxl py-5" id="banking">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class=" mx-auto" style="max-width: 500px;">
+                    <h2 class="partners-title">OUR BANKING PARTNERS</h2>
+                    <div class="elementor-divider">
+                        <span class="elementor-divider-separator">
+                            <div class="elementor-icon elementor-divider__element text-center">
+                                <strong>_____________________________________________________</strong>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="partners">
+                                <img alt="RBS logo" class="partner-logo" src="img/bank-1.png" />
+                                <img alt="HSBC logo" class="partner-logo" src="img/bank-2.png" />
+                                <img alt="Citibank logo" class="partner-logo" src="img/bank-3.png" />
+                                <img alt="Deutsche Bank logo" class="partner-logo" src="img/bank-16.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="partners">
+                                <img alt="Standard Chartered logo" class="partner-logo" src="img/bank-4.png" />
+                                <img alt="Societe Generale logo" class="partner-logo" src="img/bank-5.png" />
+                                <img alt="Rabobank logo" class="partner-logo" src="img/bank-6.png" />
+                                <img alt="PNB logo" class="partner-logo" src="img/bank-15.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="partners">
+                                <img alt="Barclays Center logo" class="partner-logo" src="img/bank-7.png" />
+                                <img alt="SBI logo" class="partner-logo" src="img/bank-8.png" />
+                                <img alt="Bank of America logo" class="partner-logo" src="img/bank-9.png" />
+                                <img alt="HDFC Bank logo" class="partner-logo" src="img/bank-14.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="partners">
+                                <img alt="Yes Bank logo" class="partner-logo" src="img/bank-10.png" />
+                                <img alt="Goldman Sachs logo" class="partner-logo" src="img/bank-11.png" />
+                                <img alt="Axis Bank logo" class="partner-logo" src="img/bank-12.png" />
+                                <img alt="ICICI Bank logo" class="partner-logo" src="img/bank-13.png" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banking End -->
+
+    <!-- Why Choose Start -->
+    <div class="container-xxl py-5">
+        <div class="content" style="background-color: #F2F3F5;">
+            <h1 style="font-size: 40px;">
+                Why Choose Krenero Advisor LLP ?
+            </h1>
+
+            <p>
+                At Krenero Advisor LLP, we understand that financial needs can arise unexpectedly, and having a
+                reliable
+                partner to support you is crucial. Here’s why you should choose us for your lending needs:
+            </p>
+
+            <div class="testimonial-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h2 style="text-align: left;">
+                                        Flexible Loan Options
+                                    </h2>
+                                    <p style="text-align: left;">
+                                        We offer a variety of loan
+                                        products tailored to meet
+                                        your unique financial
+                                        requirements, whether
+                                        you're looking for a
+                                        loan, or mortgage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h2 style="text-align: left;">
+                                        Competitive Interest Rates
+                                    </h2>
+                                    <p style="text-align: left;">
+                                        Our commitment is to provide affordable
+                                        financing solutions with competitive
+                                        interest rates to ensure that you get
+                                        the best value for your money.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h2 style="text-align: left;">
+                                        Transparent Terms and Conditions
+                                    </h2>
+                                    <p style="text-align: left;">
+                                        We believe in transparency
+                                        and honesty.Our loan
+                                        terms and conditions are
+                                        straightforward, with no
+                                        hidden fees or surprises.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h2 style="text-align: left;">
+                                        Quick Approval Process
+                                    </h2>
+                                    <p style="text-align: left;">
+                                        Time is of the essence when it comes to
+                                        financial emergencies. Our streamlined
+                                        approval process ensures that you get a
+                                        decision quickly, allowing you to access
+                                        the funds you need when you need them.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h2 style="text-align: left;">
+                                        Exceptional Customer Service
+                                    </h2>
+                                    <p style="text-align: left;">
+                                        Our dedicated team of
+                                        professionals is always
+                                        ready to assist you every
+                                        step of the way. We pride
+                                        ourselves on providing
+                                        excellent customer service,
+                                        that your smooth and hassle-free.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h2 style="text-align: left;">
+                                        Secure and Confidential
+                                    </h2>
+                                    <p style="text-align: left;">
+                                        Your privacy and security are our top priorities.
+                                        We use advanced encryption technologies and strict
+                                        data protection protocols to safeguard your personal
+                                        and financial information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Why Choose End -->
+
+    <!-- Services Start -->
+    <div class="container-xxl">
+        <div class=" mx-auto" style="max-width: 600px;">
+            <h3 class="display-6 text-center">Loan Services</h3>
+            <div class="elementor-divider">
+                <span class="elementor-divider-separator">
+                    <div class="elementor-icon elementor-divider__element text-center">
+                        <strong>_______________________________________</strong>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div><br>
+    <div class="container-xxl py-3" style="background-image: url(img/background1.png);">
+        <div class="row mt-4">
+            <!-- Loan Services Column -->
+            <div class="col-md-7">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="service-item">
+                            <span style="color: #2e3092;">Term Loan</span>
+                            <img src="img/favicon.png" alt=""class="icon">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="service-item1">
+                            <img src="img/favicon.png" alt=""class="icon">
+                            <span style="color: #2e3092;">Loan Restructuring</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="service-item">
+                            <span style="color: #2e3092;">Project Loan</span>
+                            <img src="img/favicon.png" alt=""class="icon">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="service-item1">
+                            <img src="img/favicon.png" alt=""class="icon">
+                            <span style="color: #2e3092;">LAP</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="service-item">
+                            <span style="color: #2e3092;">ECB Funding</span>
+                            <img src="img/favicon.png" alt=""class="icon">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="service-item1">
+                            <img src="img/favicon.png" alt=""class="icon">
+                            <span style="color: #2e3092;">Collateral Loans</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="service-item">
+                            <span style="color: #2e3092;">LIBOR Loan</span>
+                            <img src="img/favicon.png" alt=""class="icon">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="service-item1">
+                            <img src="img/favicon.png" alt=""class="icon">
+                            <span style="color: #2e3092;">Mortgage Loans</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="service-item">
+                            <span style="color: #2e3092;">Debt Financing</span>
+                            <img src="img/favicon.png" alt=""class="icon">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="service-item1">
+                            <img src="img/favicon.png" alt=""class="icon">
+                            <span style="color: #2e3092;">Govt Guarantee Loans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Services Column -->
+            <div class="col-md-5">
+                <div class="service-card">
+                    <div class="investment-title">Investment Services</div>
+                    <ul class="investment-services" style="color: #2e3092; font-size: 28px;">
+                        <li>Venture Capital Funding</li>
+                        <li>Private Placement of Equity</li>
+                        <li>Stock Market Funding</li>
+                        <li>Hedging Structure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- Services End -->
+
+    <!-- Our Team Start -->
+     <div class="container-xxl">
+        <div class=" mx-auto" style="max-width: 600px;">
+            <h3 class="display-6 text-center">Team Members</h3>
+            <div class="elementor-divider">
+                <span class="elementor-divider-separator">
+                    <div class="elementor-icon elementor-divider__element text-center">
+                        <strong>_______________________________________</strong>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div><br>
+    <div class="container-xxl py-5" style="background-image: url(img/background1.png);">
+        <div class="carousel-inner">
+            <div class="carousel-item d-flex justify-content-center">
+                <img src="img/team members.jpg" alt="" class="d-block  card-custom" style="width:50%">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- Our Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class=" mx-auto" style="max-width: 500px;">
+                    <h3 class="display-6 text-center">Our Clients Says</h3>
+                    <div class="elementor-divider">
+                        <span class="elementor-divider-separator">
+                            <div class="elementor-icon elementor-divider__element text-center">
+                                <strong>________________________________________________</strong>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-container" style="background: linear-gradient(180deg, #502885, #ffffff);">
+                <div class="testimonial-header d-flex justify-content-center">
+                  <div class="header-image" id="headerImage"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            
+                <div class="slider-wrapper">
+                  <div class="slides" id="slides">
+                    <div class="slide">
+                      <p style="color: #000;">
+                        Our Chairman & MD, Alok Agnihotri at the recently held CII Summit in Mumbai, <br> 
+                        when Mr. K V. Kamath, former Chairman ICICI and Chairman, National Bank for <br>
+                        Financing Infrastructure and Development was conferred with the CII President's <br>
+                        Award 2024 by Shrimati Nirmala Sitharaman, Minister of Finance.
+                        
+                    </p>
+                    </div>
+            
+                    <div class="slide">
+                      <p style="color: #000;">
+                        As a Bollywood veteran, I appreciate Mr. Alok Agnihotri,Chairman & MD of  Kreynero Advisory<br>  
+                        LLP, for his exceptional leadership and commitment to Client Satisfaction. His strategic<br>
+                        vision and integrity have propelled  Kreynero to new heights,  making it a trusted name in<br>
+                        the Financial Sector.Alok's dedication is truly commendable.Do connect with him for your<br>
+                        financial needs.
+                        
+                    </p>
+                      <div class="client-name">Amitabh Bachchan</div>
+                      <div class="client-title">Cinema Legend Worldwide</div>
+                    </div>
+            
+                    <div class="slide">
+                      <p style="color: #000;">
+                        We appreciate the invaluable support received from Krenero Advisory LLP for facilitating our<br>
+                        fund requirement of 3500 crores for setting up our Hospital Project in West Bengal.Our joint<br>
+                        efforts will directly impact the lives of countless individuals, ensuring access to essential<br>
+                        healthcare services. Thank you Team Kreynero for this truly commendable effort!
+                    </p>
+                      <div class="client-name">Dr. Prathap C Reddy</div>
+                      <div class="client-title">Founder Chairman-Apollo Hospitals</div>
+                    </div>
+            
+                    <div class="slide">
+                      <p style="color: #000;">
+                        At Kreynero Advisory LLP, under the exceptional leadership of Chairman & MD,Alok Agnihotri,<br> 
+                        we have experienced unparalleled support and guidance. Their commitment to client<br>
+                        satisfaction and innovation sets them apart, making them the go-to choice for all<br> 
+                        future financial solutions.
+                    </p>
+                      <div class="client-name">Mr. Aman Gupta</div>
+                      <div class="client-title">CO-Founder, Boat</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+       
+       
+        </div>
+    </div>
+    <br><br>
+    <!-- Testimonial End -->
+
+    <!-- Content Start -->
+    <section class="contact_section layout_padding custom-contact">
+        <div class="container">
+            <div class=" mx-auto mb-5" style="max-width: 500px;">
+                <h3 class="display-6 text-center">CONTACT US</h3>
+                <div class="elementor-divider">
+                    <span class="elementor-divider-separator">
+                        <div class="elementor-icon elementor-divider__element text-center">
+                            <strong>___________________________</strong>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <div class="map_container">
+                            <div class="map">
+                                <div style="width:100%;height:100%;">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.852939638737!2d72.85636347440577!3d19.114106382098353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9ff1241b785%3A0xe7d9ed3c6ab9d06f!2sShubham%20Centre%20no%202%2C%20A%20Wing%2C!5e0!3m2!1sen!2sin!4v1732533592394!5m2!1sen!2sin"
+                                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light" id="contact">
+        <div class="container py-3">
+            <div class="row">
+
+                <div class="col-md-3 ">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Popular Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="about.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>About</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Blog</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>News &amp; Events</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Terms and Conditions</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Acceptable Use Policy</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Cookie Policy</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Privacy Policy</a>
+                        <a class="text-light mb-2" href="contact.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Gallery</a>
+                        <div class="d-flex">
+                            <a class="btn btn-outline-light btn-social me-2"
+                                href="https://www.facebook.com/share/15vpanzoFH/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social me-2"
+                                href="https://x.com/kreyneroadvisry?t=WjRfLSgyOvXjb2wfGOvKCg&s=08 "><i
+                                    class="fab fa-x-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social me-2"
+                                href="https://www.linkedin.com/company/kreyneroadvisory/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social"
+                                href="https://www.instagram.com/kreyneroadvisory?igsh=MXEyMHQ1eDg1aDl0eg=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Loan Services</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Collateral Loans</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Debt Financing</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>ECB Funding</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Government Guarantee Loans</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Lap - Loan Against Property</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>LIBOR Loan</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Loan Restructuring</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Mortgage Loans</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Project Loan</a>
+                        <a class="text-light mb-2" href="services.html" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Term Loan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Investment Services</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Hedging Structure</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Private Placement Of Enquiry</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Stock Market Funding</a>
+                        <a class="text-light mb-2" href="#" class="nav-item nav-link"><i
+                                class="fa fa-angle-right me-2"></i>Venture Capital Funding</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Contact Us</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><b>Mumbai Office:</b> Sapphire
+                        Condominium, 3rd Floor, Corner of S.V Road & Ist Road, Khar West, Mumbai-400052, India</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><b>London Office:</b> 812,
+                        Baker street, Herlington Building, London, UK</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i><b>Gurugram Office:</b> T-1,
+                        105, BPTP Park Centra, Sec 32, Ground floor, Gurugram, 122001</p>
+                    <a href="mailto:info@krenero.com">
+                        <p class="mb-2 text-white"><i class="fa fa-envelope text-primary me-3"></i>info@krenero.com</p>
+                    </a>
+                    <a href="tel:+919711396999">
+                        <p class="mb-0 text-white"><i class="fa fa-phone-alt text-primary me-3"></i>+91
+                            9711396999</p>
+                    </a>
+                    <p class="mb-2 text-white"><i class="fa fa-globe text-primary me-3"></i>Sister Company</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-light border-top border-secondary py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-primary" href="index.html">Krenero</a>. All
+                        Rights Reserved.</p>
+                </div>
+                <div class="col-sm-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a href="https://www.sgwebapp.com/">SG Web App Techniques Pvt.
+                            Ltd</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- popup modal -->
+    <!-- <div class="modal fade custom-modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fill up the details</h5>
+                </div>
+                <section class="contact_section layout_padding p-2" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="/send_mail.php" method="POST">
+                                    <div>
+                                        <input type="text" id="name" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="number" name="number" placeholder="Phone Number"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
+                                    </div>
+                                    <div>
+                                        <input type="number" id="loanamount" name="loanamount"
+                                            placeholder="Enter Loan Amount (₹)" required>
+                                    </div>
+                                    <div>
+                                        <select id="loantype" name="loantype" placeholder="Select Loan Type" required>
+                                            <option value="type" disabled selected>Loan Type</option>
+                                            <option id="business" value="business">Business</option>
+                                            <option id="personal" value="personal">Personal</option>
+                                            <option id="home" value="home">Home</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <textarea placeholder="Leave a message here" id="message"
+                                            style="height: 100px; width: 100%; padding: 5px; outline: none; border: 1px solid lightgray;"
+                                            required></textarea>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <button type="submit">
+                                            SEND
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div> -->
+
+    <!--  popup modal end -->
+
+    <!-- <div class="social-icon">
+
+        <div class="whatsapp-icon">
+            <a href="https://wa.me/+919867731599" target="_blank" title="Follow us on Facebook">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div> -->
+
+    <!-- Instagram Icon at the Bottom -->
+
+    <!-- <div class="instagram-icon">
+            <a href="https://www.instagram.com/_money__unlimited_/?igsh=emwzd2FwZ3d1YzRx" target="_blank"
+                title="Follow us on Instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div> -->
+
+    <!-- Facebook Icon at the Bottom -->
+
+    <!-- <div class="facebook-icon">
+            <a href="https://www.facebook.com/share/18ESgwHHqg/" target="_blank" title="Follow us on Facebook">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+        </div>
+
+    </div> -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+    </script>
+    <script>
+        $('.team-slider').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 450,
+            margin: 20,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                991: {
+                    items: 3
+                },
+                1200: {
+                    items: 3
+                },
+                1920: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener('load', function () {
+            if (!localStorage.getItem('hasVisitedThankYouPage')) {
+                var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+                myModal.show();
+            }
+        });
+    </script>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+    const headerImage = document.getElementById("headerImage");
+
+    const images = [
+      'img/header.png', // Amitabh
+      'img/amitabh.png', // Ratan
+      'img/chairman-image.jpg', // Murthy
+      'img/aman-gupta.png', // Deepika
+    ];
+
+    function updateSlide() {
+      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+      headerImage.style.backgroundImage = `url('${images[currentSlide]}')`;
+    }
+
+    function autoNextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    }
+
+    setInterval(autoNextSlide, 3000); // Change every 2 second
+  </script>
+</body>
+
+</html>
