@@ -736,15 +736,20 @@ select {
     top: -35px;
 }
 
+  .elementor-divider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 
-.testimonial-container {
+  .testimonial-container {
     max-width: 700px;
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: 20px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    border: 6px solid #c09a57;
   }
 
   .testimonial-header {
@@ -762,91 +767,89 @@ select {
   }
 
   .slider-wrapper {
+    position: relative;
     overflow: hidden;
-    width: 100%;
+    padding: 30px 20px;
   }
-  
+
   .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 400%;
+    transition: transform 0.6s ease-in-out;
   }
-  
+
   .slide {
-    width: 100%;
-    flex-shrink: 0;
-    padding: 30px 20px;
+    min-width: 100%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px;
   }
-  
-  .slide h3 {
-    color: #502885;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
+
   .slide p {
-    font-size: 1rem;
-    line-height: 1.6;
-    word-break: break-word;
-    flex-grow: 1;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
   }
-  
+
+  .slide:hover p {
+    color: #502885;
+  }
+
   .client-name {
     font-weight: bold;
-    font-size: 1.2rem;
-    color: #1f8c36;
-    margin-top: 20px;
-  }
-  
-  .client-title {
-    color: #555;
-    font-size: 1rem;
-  }
-  
-  .social-icons {
-    text-align: center;
-    padding: 15px 0;
-    background: #f0f0f0;
-  }
-  
-  .social-icons a {
-    color: #502885;
     font-size: 20px;
-    margin: 0 10px;
-    text-decoration: none;
+    color: #1f8c36;
   }
-  
-  
+
+  .client-title {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* Navigation Buttons */
+  .nav-buttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-buttons button {
+    background: #502885;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background: #341b5e;
+  }
+
   @media (max-width: 768px) {
-  
-    .slide h3 {
-      font-size: 1.3rem;
+    .testimonial-container {
+      padding: 15px;
     }
-  
+
+    .text-center h3 {
+      font-size: 1.5rem;
+    }
+
     .slide p {
-      font-size: 1rem;
-    }
-  
-    .client-name {
-      font-size: 1.1rem;
-    }
-  
-    .client-title {
-      font-size: 1rem;
+      font-size: 15px;
     }
   }
-  
+
   @media (max-width: 480px) {
-    .slide {
-      padding: 20px 15px;
+    .testimonial-header {
+      height: 150px;
     }
-  
-    .slide p {
-      font-size: 0.95rem;
+
+    .client-name {
+      font-size: 18px;
     }
-  
+
+    .client-title {
+      font-size: 14px;
+    }
   }
